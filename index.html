@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Budget App</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="loginContainer" style="display: none">
+			<form id="loginForm">
+				<label for="loginEmail">Email:</label>
+				<input type="email" id="loginEmail" />
+				<br />
+				<label for="loginPassword">Password:</label>
+				<input type="password" id="loginPassword" />
+				<br />
+				<button type="submit" id="loginButton">Login</button>
+			</form>
+			<form id="registerForm">
+				<label for="registerEmail">Email:</label>
+				<input type="email" id="registerEmail" />
+				<br />
+				<label for="registerPassword">Password:</label>
+				<input type="password" id="registerPassword" />
+				<br />
+				<label for="registerPasswordConfirm">Confirm Password:</label>
+				<input type="password" id="registerPasswordConfirm" />
+				<br />
+				<button type="submit" id="registerButton">Register</button>
+			</form>
+		</div>
+		<div id="appContainer" style="display: none">
+			<h1>Welcome to the Budget App</h1>
+			<form>
+				<label for="startingAmount">Starting Amount:</label>
+				<input type="number" id="startingAmount" />
+				<br />
+				<label for="spentToday">Amount Spent Today:</label>
+				<input type="number" id="spentToday" />
+				<br />
+				<button type="submit" id="submitButton">Submit</button>
+			</form>
+			<p id="moneySaved"></p>
+			<button id="logoutButton">Logout</button>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
